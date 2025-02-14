@@ -106,10 +106,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 				if (!store.favourites.includes(item)) {
 					setStore({ favourites: [...store.favourites, item] })
 				}
-				console.log("Store after adding:", getStore());
-			},
-			setFavourite: (favourites) => {
-				setStore({ ...store, favourites: favourites })
 			},
 			deleteFavourite: (index) => {
 				const store = getStore()
